@@ -11,14 +11,6 @@ require dirname(__FILE__) . "/vendor/autoload.php";
 require dirname(__FILE__) . "/start.php";
 
 /**
- * Require router
+ * Require routes
  */
-require dirname(__FILE__) . "/router.php";
-
-$router = new router();
-
-$router->add('GET', $config['home'] . '/', array('HomeController', 'getIndex'));
-
-$router->add('GET', $config['home'] . '/page', array('HomeController', 'getPage'));
-
-$router->start();
+require dirname(__FILE__) . "/routes.php";

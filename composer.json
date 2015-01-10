@@ -21,9 +21,10 @@
     	"symfony/debug": "2.7.x-dev"
     },
     "autoload": {
-		"classmap": [
-			"controllers",
-			"models"
-		]
+		"psr-4": {
+			"MyApp\\Controllers\\":"controllers",
+			"MyApp\\Models\\":"models",
+			"MyApp\\Components\\":"components"
+		}
 	}
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace MyApp\Components;
+
 class Router {
 
   var $klein;
@@ -11,7 +13,7 @@ class Router {
   function add ($method, $url, $param) {
 
     if (is_array($param)){
-      $controllerName = 'Controllers\\' . $param[0];
+      $controllerName = '\MyApp\Controllers\\' . $param[0];
       $controller = new $controllerName;
       $controllerMethod = $param[1];
       $param = array($controller, $controllerMethod);
