@@ -1,15 +1,17 @@
 <?php
 
-namespace Controllers;
+namespace MyApp\Controllers;
 
 class HomeController extends BaseController {
 
 	function getIndex () {
-		return 'Index';
+		return $this->twig->render('home.php', array(
+			'name' => 'Alessandro Benoit'
+		));
 	}
 
 	function getPage () {
-		return 'Page';
+		return false;
 	}
 
 }
