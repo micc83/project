@@ -1,0 +1,29 @@
+{
+	"name": "My Project",
+	"version": "0.0.1-beta",
+	"type":"project",
+	"time":"2015-01-09",
+	"license": "MIT",
+	"authors": [
+        {
+            "name": "Alessandro Benoit",
+            "email": "micc83@gmail.com",
+            "homepage": "http://codeb.it",
+            "role": "Developer"
+        }
+	],
+	"require": {
+        "monolog/monolog": "1.0.*",
+        "twig/twig":"~1.0",
+        "klein/klein": "dev-master"
+    },
+    "require-dev": {
+    	"symfony/debug": "2.7.x-dev"
+    },
+    "autoload": {
+		"classmap": [
+			"controllers",
+			"models"
+		]
+	}
+}
